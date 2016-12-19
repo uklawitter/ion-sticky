@@ -37,6 +37,7 @@ angular.module('ion-sticky', ['ionic'])
 
                     // compile the clone so that anything in it is in Angular lifecycle.
                     $compile(clone)($scope);
+                    $scope.$apply();
                 };
 
                 var removeStickyClone = function () {
